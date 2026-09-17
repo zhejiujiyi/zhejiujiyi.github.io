@@ -124,7 +124,7 @@ button { font: inherit; }
 .method-grid p { margin-top: 5px; color: var(--muted); font-size: .9375rem; }
 
 .publication-list { border-top: 1px solid var(--line); }
-.publication { display: grid; grid-template-columns: 65px 150px minmax(0, 1fr); gap: 20px; align-items: start; padding: 23px 0; border-bottom: 1px solid var(--soft-line); }
+.publication { position: relative; display: grid; grid-template-columns: 65px 150px minmax(0, 1fr); gap: 20px; align-items: center; padding: 23px 0 52px; border-bottom: 1px solid var(--soft-line); }
 .publication > time { padding-top: 2px; color: var(--muted); font: .9rem/1.5 var(--serif); }
 .publication h2, .publication h3 { font: 1.08rem/1.53 var(--serif); font-weight: 400; }
 .authors { margin-top: 7px; color: #515a63; font-size: .875rem; }
@@ -137,7 +137,9 @@ button { font: inherit; }
 .publication-badges { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 7px; }
 .badge { display: inline-block; padding: 2px 8px; color: var(--blue-dark); background: #eef4f8; font-size: .75rem; line-height: 1.6; letter-spacing: .02em; }
 .badge-cover { color: #805b14; background: #fbf2dc; }
-.publication-actions { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 10px; font-size: .8125rem; }
+.publication > div { position: relative; }
+.publication > div > .publication-actions { position: absolute; top: 100%; left: 0; display: flex; flex-wrap: wrap; gap: 15px; margin-top: 5px; font-size: .8125rem; white-space: nowrap; }
+.record-list .publication-actions { position: static; display: flex; flex-wrap: wrap; gap: 15px; margin-top: 10px; font-size: .8125rem; white-space: normal; }
 .publication-record { padding-top: 0; border-top: 0; }
 .publication-record > h2 { margin-bottom: 12px; }
 .detail-page { max-width: 940px; }
@@ -221,6 +223,7 @@ button { font: inherit; }
   .publication-thumb { width: 150px; margin: 5px 0 8px; }
   .publication-thumb img { width: 150px; height: auto; max-width: 150px; }
   .publication-featured { padding-left: 12px; }
+  .publication > div > .publication-actions { white-space: normal; }
   .publication:not(:has(.publication-thumb)) > div { grid-column: auto; }
   .publication > time { font-family: var(--sans); font-size: .8125rem; }
   .record-list.numbered li, .awards li, .conference-list li { grid-template-columns: 1fr; gap: 5px; }
