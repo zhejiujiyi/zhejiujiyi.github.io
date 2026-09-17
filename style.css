@@ -221,6 +221,7 @@ button { font: inherit; }
   .publication-thumb { width: min(100%, 270px); margin: 5px 0 8px; }
   .publication-thumb img { width: 100%; height: auto; }
   .publication-featured { padding-left: 12px; }
+  .publication:not(:has(.publication-thumb)) > div { grid-column: auto; }
   .publication > time { font-family: var(--sans); font-size: .8125rem; }
   .record-list.numbered li, .awards li, .conference-list li { grid-template-columns: 1fr; gap: 5px; }
   .site-footer { flex-direction: column; gap: 8px; }
