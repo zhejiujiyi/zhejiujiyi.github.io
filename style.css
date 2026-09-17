@@ -12,6 +12,11 @@
   --sans: Arial, "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
 }
 
+html[data-lang="zh"] {
+  --serif: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", SimSun, serif;
+  --sans: "Noto Sans SC", "Noto Sans CJK SC", "Microsoft YaHei UI", "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", sans-serif;
+}
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 html[data-lang="en"] .lang-zh,
@@ -166,8 +171,10 @@ button { font: inherit; }
 .timeline h3 { font-size: 1rem; font-weight: 600; }
 .timeline h3 + p { margin-top: 3px; color: #454d54; font-size: .9375rem; }
 .timeline .secondary { margin-top: 2px; color: var(--muted); font-size: .875rem; }
-.location-marker { display: inline-block; margin-right: 6px; color: var(--blue); font-size: .95rem; line-height: 1; }
-.location a { color: var(--blue); }
+.location a { display: inline-flex; align-items: center; gap: 8px; color: var(--blue); }
+.education-logo { flex: 0 0 36px; width: 36px; height: 36px; object-fit: contain; }
+.education-logo--crest { object-fit: cover; object-position: left center; }
+.education-logo--physics { flex-basis: 68px; width: 68px; height: 30px; }
 
 .record-section + .record-section { margin-top: 38px; }
 .record-list { margin-top: 12px; padding: 0; list-style: none; }
