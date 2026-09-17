@@ -5,6 +5,14 @@
   const internalLinks = [...document.querySelectorAll('.identity, .site-nav a, a[data-preserve-lang]')];
   const storageKey = "wenjie-qian-site-language-v2";
 
+  document.querySelectorAll('.site-nav a[href="background.html"]').forEach((link) => link.remove());
+  const navLabels = { "index.html": ["Home", "主页"], "about.html": ["About", "简介"], "research.html": ["Research", "研究"], "publications.html": ["Publications", "成果"], "more.html": ["More", "更多"] };
+  document.querySelectorAll('.site-nav a').forEach((link) => {
+    const key = (link.getAttribute("href") || "").split("?")[0];
+    const labels = navLabels[key];
+    if (labels && !link.querySelector(".lang-en")) link.innerHTML = `<span class="lang-en">${labels[0]}</span><span class="lang-zh">${labels[1]}</span>`;
+  });
+
   function savedLanguage() {
     const query = new URLSearchParams(window.location.search).get("lang");
     if (query === "en" || query === "zh") return query;
