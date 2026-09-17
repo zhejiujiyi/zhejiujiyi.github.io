@@ -1,120 +1,88 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Wenjie Qian - researcher in soft materials, interfacial mechanics, and micro-nano optical measurement." />
-    <title>Home | Wenjie Qian</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Wenjie Qian — research in soft materials, interfacial mechanics, optical measurement, and engineering simulation." data-en="Wenjie Qian — research in soft materials, interfacial mechanics, optical measurement, and engineering simulation." data-zh="钱文杰的个人学术主页：软物质、界面力学、光学测量与工程仿真。">
+  <title>Wenjie Qian | Academic Homepage</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23315e85'/%3E%3Ctext x='32' y='41' text-anchor='middle' font-family='Georgia,serif' font-size='27' fill='white'%3EWQ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-title-en="Wenjie Qian | Academic Homepage" data-title-zh="钱文杰 | 个人学术主页">
+  <a class="skip-link" href="#main-content"><span class="lang-en">Skip to content</span><span class="lang-zh">跳至正文</span></a>
+  <div class="site-shell">
     <header class="site-header">
-      <div class="site-nav">
-        <a class="site-title" href="#home">Home</a>
-        <nav aria-label="Primary navigation">
-          <a href="#research">Research</a>
-          <a href="#publications">Papers</a>
-          <a href="#background">Background</a>
-        </nav>
+      <a class="identity" href="index.html"><strong>Wenjie Qian</strong><span>钱文杰</span></a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html" aria-current="page"><span class="lang-en">Home</span><span class="lang-zh">主页</span></a>
+        <a href="about.html"><span class="lang-en">About</span><span class="lang-zh">简介</span></a>
+        <a href="research.html"><span class="lang-en">Research</span><span class="lang-zh">研究</span></a>
+        <a href="publications.html"><span class="lang-en">Publications</span><span class="lang-zh">论文</span></a>
+        <a href="background.html"><span class="lang-en">Background</span><span class="lang-zh">经历</span></a>
+        <a href="more.html"><span class="lang-en">More</span><span class="lang-zh">更多</span></a>
+      </nav>
+      <div class="language-switch" role="group" aria-label="Language">
+        <button type="button" data-set-lang="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-set-lang="zh" aria-pressed="false">中文</button>
       </div>
     </header>
 
-    <main class="content" id="home">
-      <section class="section about" id="about">
-        <h2>About</h2>
-        <div class="about-row">
-          <div class="portrait-placeholder" role="img" aria-label="Portrait placeholder"></div>
-          <p>
-            I am <strong>Wenjie Qian</strong>, a Ph.D. in Nano Science and Technology from the Hong Kong University of Science and Technology.
-            My research focuses on soft materials, interfacial mechanics, finite-element simulation, and micro-nano optical measurement.
-            I am interested in understanding how wetting, adhesion, and deformation emerge in compliant materials and in translating those mechanisms into useful measurement and engineering approaches.
-          </p>
+    <main id="main-content">
+      <section class="home-intro">
+        <div>
+          <p class="eyebrow"><span class="lang-en">Soft matter · Interfacial mechanics</span><span class="lang-zh">软物质 · 界面力学</span></p>
+          <h1>Wenjie Qian <span>钱文杰</span></h1>
+          <div class="intro-copy lang-en">
+            <p>I study the mechanics and physics of soft materials and interfaces, with particular interests in wetting, adhesion, phase separation, quantitative optical measurement, and computational engineering.</p>
+            <p>My work connects fundamental physical questions with carefully designed experiments and practical material problems.</p>
+          </div>
+          <div class="intro-copy lang-zh">
+            <p>我的研究聚焦于软物质与界面的力学和物理问题，主要关注润湿、黏附、相分离、定量光学测量与计算工程。</p>
+            <p>我的工作将基础物理问题、精细实验设计与实际材料问题联系起来。</p>
+          </div>
+          <div class="inline-links">
+            <a href="research.html" data-preserve-lang><span class="lang-en">Research overview</span><span class="lang-zh">研究概览</span> →</a>
+            <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=WEyDdqcAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noreferrer">Google Scholar ↗</a>
+          </div>
+        </div>
+        <div class="portrait-placeholder" aria-label="Portrait placeholder"><span>WQ</span><small><span class="lang-en">Portrait</span><span class="lang-zh">头像预留</span></small></div>
+      </section>
+
+      <section class="home-section">
+        <div class="section-heading"><h2><span class="lang-en">Research areas</span><span class="lang-zh">研究方向</span></h2><a href="research.html" data-preserve-lang><span class="lang-en">View research</span><span class="lang-zh">查看研究</span> →</a></div>
+        <div class="topic-grid">
+          <article>
+            <figure><img src="assets/wetting-figure-1.png" alt="Experimental observations of wetting-induced phase separation" loading="lazy"></figure>
+            <h3><span class="lang-en">Wetting and phase separation</span><span class="lang-zh">润湿与相分离</span></h3>
+            <p><span class="lang-en">How liquids reorganize soft polymer networks and generate evolving surface domains.</span><span class="lang-zh">液体如何重组软聚合物网络并产生持续演化的表面结构域。</span></p>
+          </article>
+          <article>
+            <figure><img src="assets/wetting-figure-3.png" alt="Quantitative analysis of growth dynamics" loading="lazy"></figure>
+            <h3><span class="lang-en">Adhesion and soft interfaces</span><span class="lang-zh">黏附与软界面</span></h3>
+            <p><span class="lang-en">The roles of network structure, free chains, and surface heterogeneity in contact and adhesion.</span><span class="lang-zh">网络结构、自由链和表面非均匀性在接触与黏附中的作用。</span></p>
+          </article>
+          <article class="text-topic">
+            <p class="topic-mark">DIC</p>
+            <h3><span class="lang-en">Quantitative imaging</span><span class="lang-zh">定量成像</span></h3>
+            <p><span class="lang-en">Image-based methods for deformation, lens correction, coating fracture, and material characterization.</span><span class="lang-zh">面向变形、镜头校正、涂层断裂和材料表征的图像测量方法。</span></p>
+          </article>
         </div>
       </section>
 
-      <section class="section contact" id="contact">
-        <h2>Contact</h2>
-        <p>
-          Wenjie Qian<br />
-          Researcher in soft materials and interfacial mechanics<br />
-          Email: <a href="mailto:wjqian@connect.ust.hk">wjqian@connect.ust.hk</a>
-        </p>
-      </section>
-
-      <section class="section research" id="research">
-        <h2>Research</h2>
-
-        <article class="research-entry">
-          <h3>[1] Wetting, Phase Separation, and Adhesion in Soft Materials</h3>
-          <figure class="research-figure">
-            <img src="assets/wetting-figure-1.png" alt="Experimental and schematic views of a droplet on a soft gel, showing wetting-induced phase separation." />
-            <figcaption>
-              Figure from <a href="https://doi.org/10.1103/PhysRevResearch.6.033210" target="_blank" rel="noreferrer">Qian et al., <em>Physical Review Research</em> 6, 033210 (2024)</a>, CC BY 4.0.
-            </figcaption>
-          </figure>
-          <p>
-            My work investigates wetting-induced phase separation in soft porous solids, soft adhesion, and the dynamics of liquid droplets on gradient surfaces.
-            I am particularly interested in the coupling between polymer chains, interfacial structure, and the mechanical response of compliant materials.
-          </p>
-          <p class="related-work">
-            Related work: <a href="#publications">Emergence and Growth Dynamics of Wetting-induced Phase Separation on Soft Solids</a>.
-          </p>
-        </article>
-
-        <article class="research-entry">
-          <h3>[2] Dynamics and Material Characterisation</h3>
-          <figure class="research-figure">
-            <img src="assets/wetting-figure-3.png" alt="Growth curves and material-property relationships for phase separation on soft solids." />
-            <figcaption>
-              Figure from <a href="https://doi.org/10.1103/PhysRevResearch.6.033210" target="_blank" rel="noreferrer">Qian et al., <em>Physical Review Research</em> 6, 033210 (2024)</a>, CC BY 4.0.
-            </figcaption>
-          </figure>
-          <p>
-            I combine in-situ imaging with mechanics-based modelling to quantify the time evolution of interfacial phase separation and relate it to gel composition and stiffness.
-            My broader measurement work also includes interferometry, digital image correlation, speckle methods, and finite-element simulation for deformation, fracture, and interfacial bonding at small scales.
-          </p>
-          <p class="related-work">
-            Related work: <a href="#publications">micro-scale DIC for polymer-coating fracture toughness</a> and <a href="#publications">microscopy-lens distortion correction</a>.
-          </p>
-        </article>
-      </section>
-
-      <section class="section publications" id="publications">
-        <h2>Selected Papers</h2>
-        <ol class="paper-list">
-          <li>Qian W, Xu Y, Xu Q. <em>Impact of extracted polymeric chains on soft adhesion.</em> Under review by PRX, 2025.</li>
-          <li>Zhao W#, Qian W#, Xu C, Xu Q. <em>Spontaneous Motion of Liquid Droplets on Soft Gel Surfaces with Non-uniform Crosslinking Densities.</em> Physics of Fluids, 37(4), 2025.</li>
-          <li>Qian W, Zhao W, Qian T, et al. <em>Emergence and Growth Dynamics of Wetting-induced Phase Separation on Soft Solids.</em> Physical Review Research, 6, 033210, 2024.</li>
-          <li>Qian W, Zhang H, Zhu J, et al. <em>Determination of fracture toughness of polymer coating using micro-scale digital image correlation technique.</em> Polymer Testing, 93, 106896, 2021.</li>
-          <li>Qian W, Li J, Zhu J, et al. <em>Distortion correction of a microscopy lens system for deformation measurements based on speckle pattern and grating.</em> Optics and Lasers in Engineering, 124, 105804, 2020.</li>
-        </ol>
-      </section>
-
-      <section class="section background" id="background">
-        <h2>Background</h2>
-        <div class="background-group">
-          <h3>Education</h3>
-          <p><strong>The Hong Kong University of Science and Technology</strong><br />Ph.D. in Nano Science and Technology, 2021 - 2025</p>
-          <p><strong>Jiangsu University</strong><br />M.Sc. in Mechanics, 2017 - 2020</p>
-          <p><strong>Qingdao University of Technology</strong><br />B.Eng. in Civil Engineering, 2013 - 2017</p>
-        </div>
-        <div class="background-group">
-          <h3>Experience &amp; Honors</h3>
-          <p><strong>Mechanical Simulation Engineer</strong><br />TAMU Information Technology (Shanghai), Nanjing Branch, 2020 - 2021</p>
-          <p>HKUST Red Bird Scholarship (Top 5%) · National Scholarship for Graduate Students (Top 1%) · Outstanding Graduate and Thesis, Jiangsu University (Top 5%)</p>
-        </div>
-        <div class="background-group">
-          <h3>Patents</h3>
-          <p>A biaxial residual-stress introduction device based on white-light interferometric surface topography measurement (ZL201910805036.X).</p>
-          <p>An interfacial bonding-strength testing device for polymer coatings (ZL201910800502.5).</p>
+      <section class="home-section recent-work">
+        <div class="section-heading"><h2><span class="lang-en">Recent publications</span><span class="lang-zh">近期论文</span></h2><a href="publications.html" data-preserve-lang><span class="lang-en">All publications</span><span class="lang-zh">全部论文</span> →</a></div>
+        <div class="compact-list">
+          <article><time>2026</time><div><h3><span class="lang-en">The role of extracted free chains in adhesion on soft gel surfaces</span><span class="lang-zh">可提取自由链在软凝胶表面黏附中的作用</span></h3><p class="compact-authors"><strong>Wenjie Qian</strong>, Keli Zhang, Qin Xu</p><p><em>Langmuir</em> 42(31), 22623–22629.</p></div></article>
+          <article><time>2025</time><div><h3><span class="lang-en">Spontaneous motion of liquid droplets on soft gel surfaces with non-uniform crosslinking densities</span><span class="lang-zh">液滴在非均匀交联密度软凝胶表面的自发运动</span></h3><p class="compact-authors">Weiwei Zhao*, <strong>Wenjie Qian*</strong>, Chang Xu, Qin Xu</p><p><em>Physics of Fluids</em> 37, 042108.</p></div></article>
+          <article><time>2024</time><div><h3><span class="lang-en">Emergence and growth dynamics of wetting-induced phase separation on soft solids</span><span class="lang-zh">软固体表面润湿诱导相分离的产生与生长动力学</span></h3><p class="compact-authors"><strong>Wenjie Qian</strong>, Weiwei Zhao, Tiezheng Qian, Qin Xu</p><p><em>Physical Review Research</em> 6, 033210.</p></div></article>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <span>© <span id="year"></span> Wenjie Qian</span>
-      <a href="#home">Back to top</a>
+      <p>© <span id="current-year">2026</span> Wenjie Qian</p>
+      <div><a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=WEyDdqcAAAAJ&amp;view_op=list_works&amp;sortby=pubdate" target="_blank" rel="noreferrer">Google Scholar</a><a href="https://orcid.org/0000-0003-0290-5746" target="_blank" rel="noreferrer">ORCID</a><a href="https://github.com/zhejiujiyi" target="_blank" rel="noreferrer">GitHub</a><a href="mailto:wenjie.qian@hotmail.com">Email</a></div>
     </footer>
-    <script src="script.js"></script>
-  </body>
+  </div>
+</body>
 </html>
