@@ -172,9 +172,7 @@ button { font: inherit; }
 .timeline h3 + p { margin-top: 3px; color: #454d54; font-size: .9375rem; }
 .timeline .secondary { margin-top: 2px; color: var(--muted); font-size: .875rem; }
 .location a { display: inline-flex; align-items: center; gap: 8px; color: var(--blue); }
-.education-logo { flex: 0 0 36px; width: 36px; height: 36px; object-fit: contain; }
-.education-logo--crest { object-fit: cover; object-position: left center; }
-.education-logo--physics { flex-basis: 68px; width: 68px; height: 30px; }
+.education-logo { flex: 0 0 auto; width: auto; height: 24px; max-width: 36px; object-fit: contain; }
 
 .record-section + .record-section { margin-top: 38px; }
 .record-list { margin-top: 12px; padding: 0; list-style: none; }
