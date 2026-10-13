@@ -193,6 +193,8 @@ button { font: inherit; }
 .record-list h3 { font: 1rem/1.55 var(--serif); font-weight: 400; }
 .record-list p { margin-top: 5px; color: var(--muted); font-size: .875rem; }
 .record-list strong { color: var(--ink); }
+.record-list.patent-list li { grid-template-columns: 65px minmax(0, 1fr); gap: 20px; }
+.patent-list time { padding-top: 2px; color: var(--muted); font: .9rem/1.5 var(--serif); }
 .two-column-records { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 60px; margin-top: 42px; }
 .awards li { grid-template-columns: 85px minmax(0, 1fr); }
 .awards time { color: var(--blue); font-size: .8125rem; }
@@ -244,7 +246,8 @@ button { font: inherit; }
   .publication > div > .publication-actions { white-space: normal; }
   .publication:not(:has(.publication-thumb)) > div { grid-column: auto; }
   .publication > time { font-family: var(--sans); font-size: .8125rem; }
-  .record-list.numbered li, .awards li, .conference-list li { grid-template-columns: 1fr; gap: 5px; }
+  .record-list.numbered li, .record-list.patent-list li, .awards li, .conference-list li { grid-template-columns: 1fr; gap: 5px; }
+  .patent-list time { font-family: var(--sans); font-size: .8125rem; }
   .site-footer { flex-direction: column; gap: 8px; }
 }
 
